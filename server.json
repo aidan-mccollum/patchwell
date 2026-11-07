@@ -3,7 +3,7 @@
   "name": "io.patchwell/patchwell",
   "title": "Patchwell",
   "description": "Cited web research, transcription with word timestamps, and CSV/Excel cleaning with a change log.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://patchwell.io",
   "remotes": [
     {
@@ -18,5 +18,9 @@
         }
       ]
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/aidan-mccollum/patchwell",
+    "source": "github"
+  }
 }
