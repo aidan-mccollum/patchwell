@@ -14,7 +14,7 @@ Remote MCP server and plain HTTP API. Pay per call, no subscription.</p>
 | Tool | What it returns | Price |
 |---|---|---|
 | `research` | An answer where each sentence cites the page it came from, what the sources couldn't confirm, and a confidence grade. Topics, markets, products, companies, regulations, published research. Won't look up private people. | $0.15 per answered question. Declined or unanswered: free |
-| `transcribe` | Text, word-level start/end times and confidence, who said each word (Speaker 1, 2, ..., or their name when the recording says it, with the quote as evidence), speaker turns, sentence segments, SRT and VTT with speaker tags. Audio or video URLs up to 3 hours. When Whisper invents a phrase or loops on a line, you get a flag with the original text and timestamps. | $0.008 per audio minute |
+| `transcribe` | Text, word-level start/end times and confidence, who said each word (Speaker 1, 2, ..., or their name when the recording says it, with the quote as evidence), speaker turns, sentence segments, SRT and VTT with speaker tags. Audio or video URLs up to 3 hours. When Whisper invents a phrase or loops on a line, you get a flag with the original text and timestamps. | $0.008 per audio minute (min. $0.02 a file) |
 | `clean_data` | Clean rows from a CSV, Excel or JSON file, plus a log of every changed value, a review list, detected column types, a JSON Schema and a reusable recipe. | $2 per 1,000 rows |
 | `get_job_result` | The result of a long job (anything over about 100 seconds returns a `job_id`). | Free |
 
