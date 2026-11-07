@@ -111,6 +111,10 @@ The same tools run as Apify Actors, billed through your Apify account:
 - **Speaker labels you can check:** every word carries `spk_p_wrong`, the measured chance its speaker is wrong, and `speaker_review` lists the spots worth a listen with links that open the file at that second.
 - **Stable results:** every result has `schema_version`; within v1, fields are only added.
 
+- **Talk-time analytics:** each speaker's share, pace, turns, longest stretch, questions and interruptions.
+- **Rename speakers** in the Claude card, or with `POST /v1/rename` and `speaker_names` on exports.
+- **Templates:** n8n workflows (tested inside n8n) and a schedulable podcast-to-notes script at [patchwell.io/automations](https://patchwell.io/automations).
+
 How these numbers were measured, and where the tools fall short: [patchwell.io/trust](https://patchwell.io/trust).
 
 ## Privacy and limits
