@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.patchwell/patchwell",
+  "title": "Patchwell",
+  "description": "Cited web research, transcription with word timestamps, and CSV/Excel cleaning with a change log.",
+  "version": "1.0.0",
+  "websiteUrl": "https://patchwell.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://patchwell.io/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your Patchwell API key>. Free $1 key: POST https://patchwell.io/v1/credits/trial",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
