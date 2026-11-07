@@ -36,7 +36,7 @@ Or buy credit at [patchwell.io](https://patchwell.io/#pricing). Keys look like `
 **Claude (web and desktop) or ChatGPT**
 
 Add a custom connector with the address `https://patchwell.io/connect/`. The app opens a Patchwell page where you paste
-your key or get a free one, then sends you back. In Claude it's under Settings, then Connectors. In ChatGPT, use
+your key or get a free one, then sends you back. In Claude it's under Customize, then Connectors, then Add. In ChatGPT, use
 developer mode.
 
 **Claude Code**
