@@ -102,6 +102,17 @@ The same tools run as Apify Actors, billed through your Apify account:
 [transcribe](https://apify.com/patchwell/patchwell-transcribe) ·
 [clean data](https://apify.com/patchwell/patchwell-clean-data)
 
+## Built for automations
+
+- **Retries never charge twice:** send an `Idempotency-Key` header; a retry gets the first response back.
+- **Webhooks:** add `callback_url` and get the result POSTed when it's done, signed with HMAC-SHA256 and retried for about two hours.
+- **Presets:** save a configuration once (`PUT /v1/presets/<name>`) and send `"preset": "<name>"`.
+- **Exports:** `POST /v1/export?format=docx` (or `srt`, `vtt`, `txt`, `md`, `csv`) turns a transcript into a file.
+- **Speaker labels you can check:** every word carries `spk_p_wrong`, the measured chance its speaker is wrong, and `speaker_review` lists the spots worth a listen with links that open the file at that second.
+- **Stable results:** every result has `schema_version`; within v1, fields are only added.
+
+How these numbers were measured, and where the tools fall short: [patchwell.io/trust](https://patchwell.io/trust).
+
 ## Privacy and limits
 
 - Patchwell processes audio and files in temporary containers and discards them. It keeps no copies.
