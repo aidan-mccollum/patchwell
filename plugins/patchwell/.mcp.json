@@ -1,6 +1,8 @@
 {
-  "patchwell": {
-    "type": "http",
-    "url": "https://patchwell.io/connect/"
+  "mcpServers": {
+    "patchwell": {
+      "type": "http",
+      "url": "https://patchwell.io/connect/"
+    }
   }
 }
