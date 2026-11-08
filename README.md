@@ -15,10 +15,10 @@ Remote MCP server and plain HTTP API. Pay per call, no subscription.</p>
 |---|---|---|
 | `research` | An answer where each sentence cites the page it came from, what the sources couldn't confirm, and a confidence grade. Topics, markets, products, companies, regulations, published research. Won't look up private people. | $0.15 per answered question. Declined or unanswered: free |
 | `transcribe` | Text, word-level start/end times and confidence, who said each word (Speaker 1, 2, ..., or their name when the recording says it, with the quote as evidence), speaker turns, sentence segments, SRT and VTT with speaker tags. Audio or video URLs up to 3 hours. When Whisper invents a phrase or loops on a line, you get a flag with the original text and timestamps. | $0.008 per audio minute (min. $0.02 a file) |
-| `clean_data` | Clean rows from a CSV, Excel or JSON file, plus a log of every changed value, a review list, detected column types, a JSON Schema and a reusable recipe. | $0.50 per 1,000 rows |
+| `clean_data` | Clean rows from a CSV, Excel or JSON file, plus a log of every changed value, a review list, detected column types, data quality before and after, a JSON Schema and a reusable recipe. Exports to CSV and Excel. | $0.50 per 1,000 rows |
 | `get_job_result` | The result of a long job (anything over about 100 seconds returns a `job_id`). | Free |
 
-Measured on real files: a 45-minute earnings call with 7 speakers took about 90 seconds, speaker labels included. On 24 public recordings (AMI meetings, VoxConverse debates and news, Earnings-21 calls), 97% of words were credited to the right speaker. A messy 352-row customer file took 2.2 seconds to clean, with 45 duplicates merged and 1,435 values fixed, each one logged. A research question takes about a minute.
+Measured on real files: a 45-minute earnings call with 7 speakers took about 90 seconds, speaker labels included. On 24 public recordings (AMI meetings, VoxConverse debates and news, Earnings-21 calls), 97% of words were credited to the right speaker. A messy 352-row customer file took 1.7 seconds to clean, with 45 duplicates merged and 1,429 values fixed, each one logged. On real dirty datasets from data-cleaning research, it changed the meaning of 0.02% or fewer of the cells that were already correct. A research question takes about a minute.
 
 ## Get a key
 
