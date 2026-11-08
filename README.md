@@ -41,9 +41,26 @@ developer mode.
 
 **Claude Code**
 
+Install the plugin, then run `/mcp`, pick `patchwell` and sign in. A Patchwell page asks for your key or gives you a
+free one.
+
+```
+/plugin install patchwell --marketplace aidan-mccollum/patchwell
+```
+
+Or connect with a key you already have:
+
 ```bash
 claude mcp add --transport http patchwell https://patchwell.io/mcp/ --header "Authorization: Bearer YOUR_KEY"
 ```
+
+**Gemini CLI**
+
+```bash
+gemini extensions install https://github.com/aidan-mccollum/patchwell
+```
+
+Then run `/mcp auth patchwell` inside Gemini CLI to sign in.
 
 **Cursor, Windsurf and other clients that take JSON config**
 
@@ -126,6 +143,8 @@ How these numbers were measured, and where the tools fall short: [patchwell.io/t
 
 ## About this repository
 
-This repo holds the MCP Registry entry (`server.json`) and these docs. The service runs at patchwell.io.
+This repo holds the MCP Registry entry (`server.json`), the Claude Code plugin (`plugins/patchwell`), the Gemini CLI
+extension (`gemini-extension.json`), the Cursor plugin (`.cursor-plugin/`) and these docs. The service runs at
+patchwell.io.
 
 Questions: patchwell.support@gmail.com

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "patchwell",
+  "description": "Patchwell for Claude Code: cited web research, transcription with word timestamps, and CSV or Excel cleaning with a change log.",
+  "owner": {
+    "name": "Patchwell",
+    "email": "patchwell.support@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "patchwell",
+      "description": "Cited web research, transcription with word timestamps and speaker labels, and CSV or Excel cleaning with a log of every change. Pay per call from prepaid credit; a free key with $1 of credit takes one email.",
+      "category": "productivity",
+      "source": "./plugins/patchwell",
+      "homepage": "https://patchwell.io"
+    }
+  ]
+}

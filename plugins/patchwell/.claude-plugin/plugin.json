@@ -1,0 +1,26 @@
+{
+  "name": "patchwell",
+  "version": "1.2.0",
+  "description": "Cited web research, transcription with word timestamps and speaker labels, and CSV or Excel cleaning with a log of every change. Pay per call from prepaid credit; a free key with $1 of credit takes one email.",
+  "author": {
+    "name": "Patchwell",
+    "email": "patchwell.support@gmail.com",
+    "url": "https://patchwell.io"
+  },
+  "homepage": "https://patchwell.io",
+  "repository": "https://github.com/aidan-mccollum/patchwell",
+  "privacyPolicyUrl": "https://patchwell.io/privacy",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "citations",
+    "transcription",
+    "speaker-labels",
+    "subtitles",
+    "data-cleaning",
+    "csv",
+    "excel",
+    "mcp"
+  ],
+  "icon": ".claude-plugin/icon.png"
+}

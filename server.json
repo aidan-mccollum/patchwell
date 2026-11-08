@@ -3,8 +3,24 @@
   "name": "io.patchwell/patchwell",
   "title": "Patchwell",
   "description": "Cited web research, transcription with word timestamps, and CSV/Excel cleaning with a change log.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://patchwell.io",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/aidan-mccollum/patchwell/main/patchwell.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://patchwell.io/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",

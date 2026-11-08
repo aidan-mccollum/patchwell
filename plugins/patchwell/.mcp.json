@@ -1,0 +1,6 @@
+{
+  "patchwell": {
+    "type": "http",
+    "url": "https://patchwell.io/connect/"
+  }
+}

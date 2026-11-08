@@ -1,0 +1,29 @@
+{
+  "name": "patchwell",
+  "displayName": "Patchwell",
+  "version": "1.2.0",
+  "description": "Cited web research, transcription with word timestamps, and CSV or Excel cleaning with a change log.",
+  "author": {
+    "name": "Patchwell",
+    "email": "patchwell.support@gmail.com"
+  },
+  "homepage": "https://patchwell.io",
+  "repository": "https://github.com/aidan-mccollum/patchwell",
+  "license": "MIT",
+  "logo": "patchwell.png",
+  "keywords": ["research", "citations", "transcription", "speaker-labels", "subtitles", "data-cleaning", "csv", "excel", "mcp"],
+  "category": "integrations",
+  "tags": ["research", "transcription", "data-cleaning", "mcp"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "PATCHWELL_API_KEY": {
+        "type": "string",
+        "title": "Patchwell API key",
+        "description": "Starts with pw_live_. Get a free key with $1 of credit at https://patchwell.io/quickstart (one email, no card)."
+      }
+    },
+    "required": ["PATCHWELL_API_KEY"]
+  },
+  "mcpServers": "./mcp.json"
+}

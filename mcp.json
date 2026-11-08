@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "patchwell": {
+      "type": "http",
+      "url": "https://patchwell.io/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${PATCHWELL_API_KEY}"
+      }
+    }
+  }
+}

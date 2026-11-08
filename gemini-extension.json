@@ -1,0 +1,11 @@
+{
+  "name": "patchwell",
+  "version": "1.2.0",
+  "description": "Cited web research, transcription with word timestamps, and CSV or Excel cleaning with a change log. Pay per call.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "patchwell": {
+      "httpUrl": "https://patchwell.io/connect/"
+    }
+  }
+}
