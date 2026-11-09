@@ -3,7 +3,8 @@
 Patchwell is a hosted MCP server. There's nothing to download, build or run locally.
 
 1. Ask the user for their Patchwell API key. It starts with `pw_live_`. If they don't have one, they can get a free key
-   with $1 of credit (one per email, no card) by running this with their own email address:
+   with $1 of credit (no card; one per email and one per network every 30 days, with a daily cap on free keys) by
+   running this with their own email address:
 
    ```bash
    curl -X POST https://patchwell.io/v1/credits/trial -H "Content-Type: application/json" -d '{"email": "you@example.com"}'
@@ -33,4 +34,5 @@ Patchwell is a hosted MCP server. There's nothing to download, build or run loca
    Listing tools works without a key; calling one needs it.
 
 Each call spends the key's credit: $0.15 per answered research question (declined ones are free), $0.008 per audio
-minute, $0.50 per 1,000 rows. Long jobs return a `job_id`; fetch the result with `get_job_result`.
+minute (minimum $0.02 a file), $0.50 per 1,000 rows. Long jobs return a `job_id`; fetch the result with
+`get_job_result`.
