@@ -83,11 +83,14 @@ Then run `/mcp auth patchwell` inside Gemini CLI to sign in.
   "mcpServers": {
     "patchwell": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://patchwell.io/mcp/", "--header", "Authorization: Bearer YOUR_KEY"]
+      "args": ["-y", "mcp-remote", "https://patchwell.io/connect"]
     }
   }
 }
 ```
+
+The first time Claude Desktop starts the bridge, a Patchwell page opens in your browser and asks for your key or gives
+you a free one. The key stays out of this file.
 
 **Plain HTTP**
 
