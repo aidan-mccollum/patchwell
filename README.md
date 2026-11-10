@@ -14,7 +14,7 @@ Remote MCP server and plain HTTP API. Pay per call, no subscription.</p>
 | Tool | What it returns | Price |
 |---|---|---|
 | `research` | An answer where each sentence cites the page it came from, what the sources couldn't confirm, and a confidence grade. Topics, markets, products, companies, regulations, published research. Declines questions about private individuals and about anyone's personal details; public figures' public roles and statements are fine. | $0.15 per answered question. Declined or unanswered: free |
-| `transcribe` | Text, word-level start/end times and confidence, who said each word (Speaker 1, 2, ..., or a name when the recording says it in a set phrase like "My name is ...", with the quote as evidence), speaker turns, sentence segments, SRT and VTT with speaker tags. Audio or video URLs up to 3 hours. Stock phrases Whisper invents over silence ("Thanks for watching!") and repeated loops are removed, each with a flag holding the original text and timestamps. | $0.008 per audio minute (min. $0.02 a file) |
+| `transcribe` | Text, word-level start/end times and confidence, who said each word (Speaker 1, 2, ..., or a name when the recording says it in a set phrase like "My name is ...", with the quote as evidence), speaker turns, sentence segments, SRT and VTT with speaker tags. Audio or video URLs up to 3 hours. Stock phrases Whisper invents over silence ("Thanks for watching!") and repeated loops are removed, each with a flag holding the original text and timestamps. | $0.14 per audio hour (min. $0.02 a file) |
 | `clean_data` | Clean rows from a CSV, Excel or JSON file, plus a log of every changed value, a review list, detected column types, data quality before and after, a JSON Schema and a reusable recipe. Exports to CSV and Excel. | $0.50 per 1,000 rows |
 | `get_job_result` | The result of a long job (anything over about 100 seconds returns a `job_id`). | Free |
 
@@ -105,6 +105,7 @@ curl https://patchwell.io/v1/research \
 | Field | What it holds |
 |---|---|
 | `answer` | The answer. Each sentence ends with the URL of the page it came from, in brackets |
+| `claims` | Each sentence again, with its page and the quote found on that page, so your code can check it without fetching anything |
 | `sources` | The pages the answer rests on, with their titles |
 | `gaps` | What the sources couldn't confirm, and how many claims the check dropped |
 | `confidence` | `high`, `medium` or `low` |

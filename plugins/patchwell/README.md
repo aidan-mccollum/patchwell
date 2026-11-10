@@ -23,6 +23,6 @@ server entry.
 ## Cost
 
 Each call spends prepaid Patchwell credit: $0.15 per answered research question (declined or unanswered ones are
-free), $0.008 per audio minute, $0.50 per 1,000 rows. Listing the tools is free.
+free), $0.14 per audio hour, $0.50 per 1,000 rows. Listing the tools is free.
 
 [Privacy](https://patchwell.io/privacy) · [Terms](https://patchwell.io/terms) · [Docs](https://patchwell.io/quickstart)
