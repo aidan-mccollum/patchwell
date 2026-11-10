@@ -105,7 +105,7 @@ curl https://patchwell.io/v1/research \
 | Field | What it holds |
 |---|---|
 | `answer` | The answer. Each sentence ends with the URL of the page it came from, in brackets |
-| `claims` | Each sentence again, with its page and the quote found on that page, so your code can check it without fetching anything |
+| `claims` | Each sentence again, with its page (URL and title) and the quote found on that page, so your code can check it without fetching anything |
 | `sources` | The pages the answer rests on, with their titles |
 | `gaps` | What the sources couldn't confirm, and how many claims the check dropped |
 | `confidence` | `high`, `medium` or `low` |
