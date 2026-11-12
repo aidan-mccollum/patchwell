@@ -22,7 +22,7 @@ From our own runs: a 44-minute interview took 85 seconds end to end, speaker lab
 
 ## Get a key
 
-Free key with $1 of credit (more on launch day). It needs an email but no card. You get one per email and one per network every 30 days, and only a set number go out each day:
+Free key with $1 of credit. It needs an email but no card. You get one per email and one per network every 30 days, and only a set number go out each day:
 
 ```bash
 curl -X POST https://patchwell.io/v1/credits/trial \
