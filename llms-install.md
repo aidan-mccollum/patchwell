@@ -33,6 +33,6 @@ Patchwell is a hosted MCP server. There's nothing to download, build or run loca
 3. Check that the server shows five tools: `research`, `transcribe`, `clean_data`, `get_job_result` and `listen_clip`.
    Listing tools works without a key; calling one needs it.
 
-Each call spends the key's credit: $0.15 per answered research question (declined ones are free), $0.09 per audio
-hour (minimum $0.01 a file), $0.10 per 1,000 rows. Long jobs return a `job_id`; fetch the result with
+Each call spends the key's credit: $0.02 per answered research question ($0.06 with `"depth": "deep"`; declined and
+unanswered ones are free), $0.06 per audio hour (minimum $0.01 a file), $0.01 per 1,000 rows. Long jobs return a `job_id`; fetch the result with
 `get_job_result`.
