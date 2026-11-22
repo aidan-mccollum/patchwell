@@ -4,8 +4,8 @@ Patchwell adds paid tools. Each call spends the user's prepaid Patchwell credit,
 
 - `research`: answers a question from the web, with a cited page for each sentence and a list of what the sources
   couldn't confirm. Takes about 30 seconds at the median; hard multi-step questions take longer. $0.02 per answered
-  question, $0.06 with `"depth": "deep"` for hard multi-step questions; `"private": true` keeps the question on GPUs
-  Patchwell rents at the same price. Declined or unanswered questions cost nothing. It won't look up private people.
+  question, $0.06 with `"depth": "deep"` for hard multi-step questions; `"private": true` keeps the question inside
+  Modal, the cloud Patchwell runs on, at the same price. Declined or unanswered questions cost nothing. It won't look up private people.
 - `transcribe`: turns an audio or video URL into text with word times, speaker labels, SRT and VTT. $0.06 per audio
   hour (minimum $0.01 a file).
 - `clean_data`: cleans a CSV, Excel or JSON file and returns the rows plus a log of every changed value. $0.01 per
