@@ -3,7 +3,7 @@
   "name": "io.patchwell/patchwell",
   "title": "Patchwell",
   "description": "Cited web research, transcription with word timestamps, and CSV/Excel cleaning with a change log.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "websiteUrl": "https://patchwell.io",
   "icons": [
     {
