@@ -3,7 +3,7 @@
 Patchwell adds paid tools. Each call spends the user's prepaid Patchwell credit, so use one only when the task needs it.
 
 - `research`: answers a question from the web, with a cited page for each sentence and a list of what the sources
-  couldn't confirm. Takes about 30 seconds at the median; hard multi-step questions take longer. $0.02 per answered
+  couldn't confirm. $0.02 per answered
   question, $0.06 with `"depth": "deep"` for hard multi-step questions; `"private": true` keeps the question inside
   Modal, the cloud Patchwell runs on, at the same price. Declined or unanswered questions cost nothing. It won't look up private people.
 - `transcribe`: turns an audio or video URL into text with word times, speaker labels, SRT and VTT. $0.06 per audio
@@ -14,3 +14,9 @@ Patchwell adds paid tools. Each call spends the user's prepaid Patchwell credit,
 
 If the tools aren't connected yet, tell the user to run `/mcp auth patchwell`. A browser page asks for their Patchwell
 key or gives them a free one with $1 of credit.
+
+Research timing, measured:
+
+<!-- facts:research-timing -->
+A question takes about 35 seconds at the median, and 9 in 10 finish within about 99 seconds (measured over the 7 days to 2026-11-23).
+<!-- /facts:research-timing -->
