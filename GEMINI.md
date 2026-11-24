@@ -18,5 +18,5 @@ key or gives them a free one with $1 of credit.
 Research timing, measured:
 
 <!-- facts:research-timing -->
-A question takes about 38 seconds at the median, and 9 in 10 finish within about 2 minutes (measured over the 7 days to 2026-11-23).
+A question takes about 37 seconds at the median, and 9 in 10 finish within about 2 minutes (measured over the 7 days to 2026-11-23).
 <!-- /facts:research-timing -->
